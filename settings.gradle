@@ -1,0 +1,2 @@
+include ':app', ':aliplayer'
+rootProject.name='HSAliPlyer'
