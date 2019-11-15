@@ -1,4 +1,7 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+// Your Group
+group='com.github.CYL-ALing'
 
 android {
     compileSdkVersion 28
