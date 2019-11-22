@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.CYL-ALing'
 
 android {
     compileSdkVersion 28
@@ -46,4 +47,3 @@ dependencies {
     api 'com.aliyun.dpa:oss-android-sdk:+'
     api 'androidx.recyclerview:recyclerview:1.0.0'
 }
-

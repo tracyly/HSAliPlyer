@@ -1,2 +1,2 @@
-include ':app', ':aliplayer', ':playlibrary'
+include ':app', ':aliplayer',  ':AlivcPlayer-3.4.11'
 rootProject.name='HSAliPlyer'

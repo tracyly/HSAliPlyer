@@ -1,0 +1,26 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('AlivcPlayer-3.4.11.aar'))
+
+//配置插件
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+
+version = "3.4.11"
+group='com.github.CYL-ALing'
+
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+bintray {
+    user = properties.getProperty("camillealing")    //读取 local.properties 文件里面的 bintray.user
+    key = properties.getProperty("20d8bec462f0cccbdb234389cfddffca426c3b32")   //读取 local.properties 文件里面的 bintray.apikey
+    configurations = ['archives']
+    pkg {
+        repo = "maven"  //在binary中的库的名称 一般就maven 你可以自己
+        name = "AliyunVodPlayer"
+        websiteUrl = "https://github.com/CYL-ALing"
+        vcsUrl = "https://github.com/CYL-ALing"
+        licenses = ["Apache-2.0"]
+        publish = true
+    }
+}
