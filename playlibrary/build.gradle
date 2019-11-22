@@ -39,5 +39,5 @@ dependencies {
 }
 
 aarPlugin {
-    includeAllInnerDependencies true  // It's false for default
+    includeAllInnerDependencies false  // It's false for default
 }
