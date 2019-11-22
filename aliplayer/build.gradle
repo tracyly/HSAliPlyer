@@ -39,17 +39,17 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    //api fileTree(dir: 'libs', include: ['*.aar'])
-    api(name: 'AlivcPlayer-3.4.11', ext: 'aar')
-    api(name: 'AlivcReporter-1.2', ext: 'aar')
-    api(name: 'AliyunVodPlayer-3.4.11', ext: 'aar')
+    api fileTree(dir: 'libs', include: ['*.aar'])
+//    api(name: 'AlivcPlayer-3.4.11', ext: 'aar')
+//    api(name: 'AlivcReporter-1.2', ext: 'aar')
+//    api(name: 'AliyunVodPlayer-3.4.11', ext: 'aar')
 
-    implementation 'androidx.appcompat:appcompat:1.0.2'
+    api 'androidx.appcompat:appcompat:1.0.2'
     // 阿里播放器
-    implementation 'com.aliyun.dpa:oss-android-sdk:+'
-    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    api 'com.aliyun.dpa:oss-android-sdk:+'
+    api 'androidx.recyclerview:recyclerview:1.0.0'
 }
 
 aarPlugin {
-    includeAllInnerDependencies true  // It's false for default
+    includeAllInnerDependencies false  // It's false for default
 }
