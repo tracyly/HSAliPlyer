@@ -25,6 +25,11 @@ android {
     }
 
 }
+repositories{
+    flatDir{
+        dirs 'libs'
+    }
+}
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
@@ -34,4 +39,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation 'com.github.CYL-ALing:HSAliPlyer:v1.0.0'
+    implementation(name: 'AlivcPlayer-3.4.11', ext: 'aar')
+    implementation(name: 'AlivcReporter-1.2', ext: 'aar')
+    implementation(name: 'AliyunVodPlayer-3.4.11', ext: 'aar')
 }
