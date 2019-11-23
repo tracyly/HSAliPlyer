@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import com.aliplayer.AliyunVodPlayerView;
 
+
 public class MainActivity extends AppCompatActivity {
 
     private String videoUrl = "https://video.huasheng100.com/9cfe3cb6007442dd87b24f33fe4a3bf8/dae07f2d582e4b3883333cc33d8cf37d-6bfe22c9c1bbedc7064a4e01d7c79590-ld.mp4";
